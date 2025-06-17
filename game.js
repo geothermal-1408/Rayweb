@@ -58,7 +58,7 @@ WebAssembly.instantiateStreaming(fetch('game.wasm'),{
 	    document.title = cstr_to_jstr(buffer,title_ptr);
 	},
 	"SetTargetFPS": (fps)=>{
-	    console.log(`game is not currently in ${fps} FPS`);
+	    console.log(`on browser game wants to run on ${fps} FPS`);
 	},
 	"GetScreenWidth": ()=> {
 	      return ctx.canvas.width;
